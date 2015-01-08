@@ -16,7 +16,8 @@ mata.wald(theta.hats, se.theta.hats, model.weights, normal.lm, residual.dfs,
                      value in \code{theta.hats}.}
 
 \item{model.weights}{A vector containing the model weights for each candidate
-                     model.  Calculated from an information criterion, such as AIC.
+                     model.  Calculated from an information criterion,
+                     such as AIC or BIC.
                      All model weights must be non-negative, and sum to one.}
 
 \item{normal.lm}{Logical.  TRUE for the normal linear model case, and
@@ -34,8 +35,8 @@ mata.wald(theta.hats, se.theta.hats, model.weights, normal.lm, residual.dfs,
 }
 \description{
 A function for computing the Model-Averaged Tail Area Wald (MATA-Wald)
-confidence interval, using the single-model estimators
-and corresponding AIC model weights.
+confidence interval, constructed using single-model estimators
+and model weights.
 }
 \details{
 \code{mata.wald} may be used to construct model-averaged
